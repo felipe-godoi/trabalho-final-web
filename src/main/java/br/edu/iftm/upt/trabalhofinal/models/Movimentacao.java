@@ -38,6 +38,13 @@ public class Movimentacao implements Serializable{
 	public LocalDate data;
 	public LocalTime hora;
 
+	public Movimentacao() {
+		super();
+		
+		data = LocalDate.now();
+		hora = LocalTime.now();
+	}
+
 	public Long getCodigo() {
 		return codigo;
 	}
@@ -113,7 +120,8 @@ public class Movimentacao implements Serializable{
 
 	@Override
 	public String toString() {
-		return "Movimentacao [codigo=" + codigo + ", valor=" + valor + ", tipo=" + tipo + ", data=" + data + ", hora="
-				+ hora + "]";
+		return "Movimentacao [codigo=" + codigo + ", destino=" + destino + ", valor=" + valor + ", tipo=" + tipo
+				+ ", data=" + data + ", hora=" + hora + "]";
 	}
+
 }

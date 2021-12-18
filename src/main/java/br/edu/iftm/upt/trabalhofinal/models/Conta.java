@@ -16,6 +16,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+
 @Entity
 @Table(name="conta")
 public class Conta implements Serializable{
@@ -34,6 +35,13 @@ public class Conta implements Serializable{
 	public LocalDate dataCriacao;
 	@Column(name="hora_criacao")
 	public LocalTime horaCriacao;
+
+	public Conta() {
+		super();
+		
+		dataCriacao = LocalDate.now();
+		horaCriacao = LocalTime.now();
+	}
 
 	public Long getCodigo() {
 		return codigo;
