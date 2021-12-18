@@ -4,27 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41ba676b-1ba5-4340-92df-efc2c5a8df95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/iftm/upt/trabalhofinal/controller/UsuarioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/iftm/upt/trabalhofinal/repository/UsuarioRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/iftm/upt/trabalhofinal/service/UsuarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/iftm/upt/trabalhofinal/models/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/iftm/upt/trabalhofinal/models/Usuario.java" afterDir="false" />
+    <list default="true" id="3dbc79e3-bd52-4205-a7e9-b1a9ee3890a9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/trabalhofinal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/trabalhofinal.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/iftm/upt/trabalhofinal/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/iftm/upt/trabalhofinal/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/iftm/upt/trabalhofinal/controller/MovimentacoesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/iftm/upt/trabalhofinal/controller/MovimentacoesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/iftm/upt/trabalhofinal/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/iftm/upt/trabalhofinal/controller/UsuarioController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/cadastro-usuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/cadastro-usuario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home-admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/listar-usuarios.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/iftm/upt/trabalhofinal/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/edu/iftm/upt/trabalhofinal/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/iftm/upt/trabalhofinal/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/edu/iftm/upt/trabalhofinal/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/iftm/upt/trabalhofinal/models/Conta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/edu/iftm/upt/trabalhofinal/models/Conta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/iftm/upt/trabalhofinal/models/Movimentacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/edu/iftm/upt/trabalhofinal/models/Movimentacao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/iftm/upt/trabalhofinal/models/TipoMovimentacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/edu/iftm/upt/trabalhofinal/models/TipoMovimentacao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/iftm/upt/trabalhofinal/models/TipoUsuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/edu/iftm/upt/trabalhofinal/models/TipoUsuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/edu/iftm/upt/trabalhofinal/models/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/edu/iftm/upt/trabalhofinal/models/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/conta/cadastro-conta.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/conta/cadastro-conta.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/fragments/cabecalhos.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/fragments/cabecalhos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/fragments/menuslaterais.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/fragments/menuslaterais.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/fragments/rodapes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/fragments/rodapes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/layoutpadrao.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/layoutpadrao.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/listar-usuarios.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/listar-usuarios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/movimentacoes/operacoes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/movimentacoes/operacoes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/usuario/cadastro-usuario.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +59,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Guilherme\Desktop\Programacao\guilhermeromelo\trabalho-final-web\src\main\resources\templates" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" nameIsGenerated="true">

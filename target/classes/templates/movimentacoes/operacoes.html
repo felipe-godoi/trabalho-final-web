@@ -1,48 +1,47 @@
 <!DOCTYPE html>
-<html>
-
+<html layout:decorate="~{layout/layoutpadrao}" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.thymeleaf.org">
+<head>
+	<title>Pesquisar</title>
+</head>
 <body>
-	<main id="main" class="main">
-		<section class="section">
-			<div class="row">
-				<div class="card">
-					<div class="card-body">
-						<h5 class="card-title">Título Dinâmico - Saque, depósito,
-							transferências</h5>
+<div layout:fragment="conteudo" class="d-flex flex-grow-1" id="conteudo">
+	<div th:replace="~{layout/fragments/menuslaterais :: menulateral}"></div>
+	<div class="container">
+		<div class="row">
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title">Título Dinâmico - Saque, depósito,
+						transferências</h5>
 
-						<!-- No Labels Form -->
-						<form class="row g-3" action="#"
-							th:action="@{/movimentacao/novo}" method="post" th:object="${movimentacao}">
-							<input type="hidden" th:field="*{tipo}">
-							<div th:if="${habilitarTransferencia}" class="col-md-6">
-								<label for="destino" class="form-label">Conta</label> 
-								<select th:field="*{destino}"
+					<!-- No Labels Form -->
+					<form class="row g-3" action="#"
+						  th:action="@{/movimentacao/novo}" method="post" th:object="${movimentacao}">
+						<input type="hidden" th:field="*{tipo}">
+						<div th:if="${habilitarTransferencia}" class="col-md-6">
+							<label for="destino" class="form-label">Conta</label>
+							<select th:field="*{destino}"
 									name="destino" id="destino" class="form-select">
-									<option th:each="c : ${contas}" th:value="${c.codigo}"
+								<option th:each="c : ${contas}" th:value="${c.codigo}"
 										th:text="${c.numero}"></option>
-								</select>
-							</div>
-							<div class="col-md-6">
-								<label for="valor" class="form-label">Valor</label> 
-								<input th:field="*{valor}"
-									name="valor" id="valor" type="text" class="form-control">
-							</div>
-							<div class="text-center" style="padding-top: 30px;">
-								<a  class="btn btn-secondary" th:href="@{/}">Cancelar</a>
-								<button type="submit" class="btn btn-primary">Cadastrar</button>
-							</div>
-						</form>
-						<!-- End No Labels Form -->
+							</select>
+						</div>
+						<div class="col-md-6">
+							<label for="valor" class="form-label">Valor</label>
+							<input th:field="*{valor}"
+								   name="valor" id="valor" type="text" class="form-control">
+						</div>
+						<div class="text-center" style="padding-top: 30px;">
+							<a  class="btn btn-secondary" th:href="@{/home}">Cancelar</a>
+							<button type="submit" class="btn btn-primary">Cadastrar</button>
+						</div>
+					</form>
+					<!-- End No Labels Form -->
 
-					</div>
 				</div>
-
 			</div>
-		</section>
 
-	</main>
-	<!-- End #main -->
-
+		</div>
+	</div>
+</div>
 </body>
-
 </html>

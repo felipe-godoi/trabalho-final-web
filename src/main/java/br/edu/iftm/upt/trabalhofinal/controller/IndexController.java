@@ -17,13 +17,21 @@ public class IndexController {
 	@Autowired
 	private ContaRepository contaRepository;
 
-	@GetMapping(value = {"/", "/index.html"} )
+	@GetMapping(value = {"/", "/index.html", "/login"} )
 	public ModelAndView index() {
 		logger.trace("Entrou em index");
-		ModelAndView mv = new ModelAndView("index");
+		ModelAndView mv = new ModelAndView("login");
 		
 		logger.trace("Encaminhando para a view index");
 		return mv;
 	}
-	
+
+	@GetMapping(value = {"/home"} )
+	public ModelAndView home() {
+		logger.trace("Entrou em index");
+		ModelAndView mv = new ModelAndView("index");
+
+		logger.trace("Encaminhando para a view index");
+		return mv;
+	}
 }

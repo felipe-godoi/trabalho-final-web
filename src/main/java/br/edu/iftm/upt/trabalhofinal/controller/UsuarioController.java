@@ -65,12 +65,6 @@ public class UsuarioController {
         return "redirect:/usuarios/listar";
     }
 
-    @GetMapping("/login")
-    public ModelAndView loginUsuarioPage() {
-        ModelAndView mv = new ModelAndView("login");
-        return mv;
-    }
-
     @PostMapping("/login")
     public String loginUsuario(String username, String senha) {
         System.out.println(username + "/////" + senha);
@@ -83,6 +77,6 @@ public class UsuarioController {
                 else
                     return "redirect:/home";
         }
-        return "redirect:/usuarios/login";
+        return "redirect:/";
     }
 }

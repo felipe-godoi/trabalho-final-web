@@ -84,7 +84,7 @@ public class MovimentacoesController {
 	@PostMapping("/novo")
 	public ModelAndView novo(Movimentacao movimentacao) {
 		logger.trace("Entrou na view para salvar o cadastro de saque");
-		ModelAndView mv = new ModelAndView("redirect:/");
+		ModelAndView mv = new ModelAndView("redirect:/home");
 		
 		movimentacaoService.salvar(movimentacao);
 		
