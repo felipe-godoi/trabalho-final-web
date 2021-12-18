@@ -37,6 +37,11 @@ public class Usuario implements Serializable {
 	@Enumerated(EnumType.STRING)
 	public TipoUsuario tipo;
 
+	public Usuario() {
+		dataCriacao = LocalDate.now();
+		horaCriacao = LocalTime.now();
+	}
+
 	@Override
 	public String toString() {
 		return "Usuario [codigo=" + codigo + ", nome=" + nome + ", endereco=" + endereco + ", telefone=" + telefone
