@@ -31,7 +31,7 @@ public class MovimentacoesController {
 	@GetMapping("/saque")
 	public ModelAndView saque(Movimentacao movimentacao) {
 		logger.trace("Entrou em cadastro de saque");
-		ModelAndView mv = new ModelAndView("operacoes");
+		ModelAndView mv = new ModelAndView("movimentacoes/operacoes");
 		
 		movimentacao.setTipo(TipoMovimentacao.SAQUE);
 		mv.addObject("movimentacao", movimentacao);
@@ -48,7 +48,7 @@ public class MovimentacoesController {
 	@GetMapping("/deposito")
 	public ModelAndView deposito(Movimentacao movimentacao) {
 		logger.trace("Entrou em cadastro de deposito");
-		ModelAndView mv = new ModelAndView("operacoes");
+		ModelAndView mv = new ModelAndView("movimentacoes/operacoes");
 		
 		movimentacao.setTipo(TipoMovimentacao.DEPOSITO);
 		mv.addObject("movimentacao", movimentacao);
@@ -65,7 +65,7 @@ public class MovimentacoesController {
 	@GetMapping("/transferencia")
 	public ModelAndView transferencia(Movimentacao movimentacao) {
 		logger.trace("Entrou em cadastro de transferencia");
-		ModelAndView mv = new ModelAndView("operacoes");
+		ModelAndView mv = new ModelAndView("movimentacoes/operacoes");
 		
 		movimentacao.setTipo(TipoMovimentacao.TRANSFERENCIA);
 		mv.addObject("movimentacao", movimentacao);

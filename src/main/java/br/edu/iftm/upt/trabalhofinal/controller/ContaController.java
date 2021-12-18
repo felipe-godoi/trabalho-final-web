@@ -23,7 +23,7 @@ public class ContaController {
 	@GetMapping("/cadastrar")
 	public ModelAndView cadastroConta() {
 		logger.trace("Entrou em cadastro de contas");
-		ModelAndView mv = new ModelAndView("cadastro-conta");
+		ModelAndView mv = new ModelAndView("conta/cadastro-conta");
 		logger.trace("Encaminhando para a view cadastro-conta");
 		return mv;
 	}

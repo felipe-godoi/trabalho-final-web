@@ -1,44 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html layout:decorate="~{layout/layoutpadrao}" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.thymeleaf.org">
 <head>
-<title>Pesquisar</title>
+	<title>Pesquisar</title>
 </head>
 <body>
+<div layout:fragment="conteudo" class="d-flex flex-grow-1" id="conteudo">
+	<div th:replace="~{layout/fragments/menuslaterais :: menulateral}"></div>
+	<div class="container">
+		<div class="row">
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title">Cadastro de Contas</h5>
 
-	<main id="main" class="main">
-		<section class="section">
-			<div class="row">
-				<div class="card">
-					<div class="card-body">
-						<h5 class="card-title">Cadastro de Contas</h5>
+					<!-- No Labels Form -->
+					<form class="row g-3" action="#" th:action="@{/conta/novo}"
+						  method="post">
+						<div class="col-md-6">
+							<label for="inputState" class="form-label">Numero</label>
+							<input id="numero" name="numero" type="text" class="form-control">
+						</div>
+						<div class="col-md-6">
+							<label for="inputState" class="form-label">Saldo</label>
+							<input id="saldo" name="saldo" type="text" class="form-control">
+						</div>
+						<div class="text-center" style="padding-top: 30px;">
+							<a th:href="@{/}" class="btn btn-secondary">Cancelar</a>
+							<button type="submit" class="btn btn-primary">Cadastrar</button>
+						</div>
+					</form>
+					<!-- End No Labels Form -->
 
-						<!-- No Labels Form -->
-						<form class="row g-3" action="#" th:action="@{/conta/novo}"
-							method="post">
-							<div class="col-md-6">
-								<label for="inputState" class="form-label">Numero</label> 
-								<input id="numero" name="numero" type="text" class="form-control">
-							</div>
-							<div class="col-md-6">
-								<label for="inputState" class="form-label">Saldo</label> 
-								<input id="saldo" name="saldo" type="text" class="form-control">
-							</div>
-							<div class="text-center" style="padding-top: 30px;">
-								<button type="reset" class="btn btn-secondary">Cancelar</button>
-								<button type="submit" class="btn btn-primary">Cadastrar</button>
-							</div>
-						</form>
-						<!-- End No Labels Form -->
-
-					</div>
 				</div>
-
 			</div>
-		</section>
 
-	</main>
-	<!-- End #main -->
-
+		</div>
+	</div>
+</div>
 </body>
-
 </html>
