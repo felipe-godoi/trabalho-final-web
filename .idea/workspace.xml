@@ -4,26 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3dbc79e3-bd52-4205-a7e9-b1a9ee3890a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/trabalhofinal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/trabalhofinal.iml" afterDir="false" />
+    <list default="true" id="3dbc79e3-bd52-4205-a7e9-b1a9ee3890a9" name="Changes" comment="adicionei as contas no drop da home e a conta de destino na tela de transferências">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/iftm/upt/trabalhofinal/controller/ContaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/iftm/upt/trabalhofinal/controller/ContaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/iftm/upt/trabalhofinal/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/iftm/upt/trabalhofinal/controller/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/iftm/upt/trabalhofinal/controller/MovimentacoesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/iftm/upt/trabalhofinal/controller/MovimentacoesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/iftm/upt/trabalhofinal/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/iftm/upt/trabalhofinal/controller/UsuarioController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/cadastro-usuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/cadastro-usuario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/conta/cadastro-conta.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/conta/cadastro-conta.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/fragments/cabecalhos.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/fragments/cabecalhos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/fragments/menuslaterais.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/fragments/menuslaterais.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/fragments/rodapes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/fragments/rodapes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/layoutpadrao.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/layoutpadrao.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/listar-usuarios.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/listar-usuarios.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login/login.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/movimentacoes/operacoes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/movimentacoes/operacoes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/usuario/cadastro-usuario.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,10 +23,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -49,12 +44,16 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="22Fs7oNEBApbLXENKWXXnTXMLHt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
-    <option name="flattenPackages" value="true" />
+    <option name="compactDirectories" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -113,5 +112,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adicionei as contas no drop da home e a conta de destino na tela de transferências" />
+    <option name="LAST_COMMIT_MESSAGE" value="adicionei as contas no drop da home e a conta de destino na tela de transferências" />
   </component>
 </project>

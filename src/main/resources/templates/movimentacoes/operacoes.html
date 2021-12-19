@@ -10,21 +10,12 @@
 		<div class="row">
 			<div class="card">
 				<div class="card-body">
-					<h5 class="card-title">Título Dinâmico - Saque, depósito,
-						transferências</h5>
+					<h5 class="card-title" th:text="${titulo}"></h5>
 
 					<!-- No Labels Form -->
 					<form class="row g-3" action="#"
 						  th:action="@{/movimentacao/novo}" method="post" th:object="${movimentacao}">
 						<input type="hidden" th:field="*{tipo}">
-						<div th:if="${habilitarTransferencia}" class="col-md-6">
-							<label for="destino" class="form-label">Conta</label>
-							<select th:field="*{destino}"
-									name="destino" id="destino" class="form-select">
-								<option th:each="c : ${contas}" th:value="${c.codigo}"
-										th:text="${c.numero}"></option>
-							</select>
-						</div>
 						<div class="col-md-6">
 							<label for="valor" class="form-label">Valor</label>
 							<input th:field="*{valor}"

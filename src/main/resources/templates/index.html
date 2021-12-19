@@ -47,9 +47,10 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <select class="form-select" id="inputState">
-                                                <option selected>Choose...</option>
-                                                <option>...</option>
+                                            <select name="origem" id="origem" class="form-select">
+                                                <option selected>Escolher conta...</option>
+                                                <option th:each="c : ${contas}" th:value="${c.codigo}"
+                                                        th:text="${c.numero}"></option>
                                             </select>
                                         </div>
                                         <div class="col-md-6">
@@ -139,6 +140,7 @@
                                                     style="padding-bottom: 10px !important; padding-top: 10px; color: #444444;">
                                                 Encerrar Conta</h4>
                                         </div>
+                                    </a>
                                 </div>
 
                             </div>

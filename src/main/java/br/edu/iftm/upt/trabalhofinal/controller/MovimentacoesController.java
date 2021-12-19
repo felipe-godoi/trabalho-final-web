@@ -35,6 +35,8 @@ public class MovimentacoesController {
 		
 		movimentacao.setTipo(TipoMovimentacao.SAQUE);
 		mv.addObject("movimentacao", movimentacao);
+
+		mv.addObject("titulo", "Saque");
 		
 		logger.debug("Buscando contas no banco de dados");
 		List<Conta> contas = contaRepository.findAll();
@@ -52,6 +54,8 @@ public class MovimentacoesController {
 		
 		movimentacao.setTipo(TipoMovimentacao.DEPOSITO);
 		mv.addObject("movimentacao", movimentacao);
+
+		mv.addObject("titulo", "Depósito");
 		
 		logger.debug("Buscando contas no banco de dados");
 		List<Conta> contas = contaRepository.findAll();
@@ -65,7 +69,7 @@ public class MovimentacoesController {
 	@GetMapping("/transferencia")
 	public ModelAndView transferencia(Movimentacao movimentacao) {
 		logger.trace("Entrou em cadastro de transferencia");
-		ModelAndView mv = new ModelAndView("movimentacoes/operacoes");
+		ModelAndView mv = new ModelAndView("movimentacoes/transferencia");
 		
 		movimentacao.setTipo(TipoMovimentacao.TRANSFERENCIA);
 		mv.addObject("movimentacao", movimentacao);
@@ -77,7 +81,7 @@ public class MovimentacoesController {
 		logger.debug(contas.toString());
 		mv.addObject("contas", contas);
 		
-		logger.trace("Encaminhando para a view operacoes");
+		logger.trace("Encaminhando para a view transferencias");
 		return mv;
 	}
 	

@@ -1,5 +1,6 @@
 package br.edu.iftm.upt.trabalhofinal.controller;
 
+import br.edu.iftm.upt.trabalhofinal.models.Conta;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import br.edu.iftm.upt.trabalhofinal.repository.ContaRepository;
+
+import java.util.List;
 
 @Controller
 public class IndexController {
@@ -30,6 +33,9 @@ public class IndexController {
 	public ModelAndView home() {
 		logger.trace("Entrou em index");
 		ModelAndView mv = new ModelAndView("index");
+
+		List<Conta> contas = contaRepository.findAll();
+		mv.addObject("contas", contas);
 
 		logger.trace("Encaminhando para a view index");
 		return mv;

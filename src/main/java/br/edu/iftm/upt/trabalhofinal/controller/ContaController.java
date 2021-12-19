@@ -36,7 +36,7 @@ public class ContaController {
 		
 		contaService.salvar(conta);
 		
-		ModelAndView mv = new ModelAndView("redirect:/");
+		ModelAndView mv = new ModelAndView("redirect:/home");
 		logger.trace("Encaminhando para a view index");
 		return mv;
 	}
